@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>mariyaGPT</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='styles.css') }}"
+    >
+</head>
+
+<body class="chat-page">
+
+    <div class="app-shell">
+
+        <aside
+            class="sidebar"
+            id="sidebar"
+        >
+
+            <div class="sidebar-header">
+
+                <h2>mariyaGPT</h2>
+
+                <button
+                    type="button"
+                    class="sidebar-close"
+                    id="sidebar-close"
+                    aria-label="Close sidebar"
+                >
+                    ×
+                </button>
+
+            </div>
+
+            <form id="new-chat-form">
+
+                <button
+                    type="submit"
+                    class="new-chat-button"
+                >
+                    + New Chat
+                </button>
+
+            </form>
+
+            <nav
+                class="conversation-list"
+                id="conversation-list"
+            ></nav>
+
+        </aside>
+
+        <section class="chat-panel">
+
+            <header class="chat-header">
+
+                <div class="header-left">
+
+                    <button
+                        type="button"
+                        class="sidebar-toggle"
+                        id="sidebar-toggle"
+                        aria-label="Toggle sidebar"
+                    >
+                        ☰
+                    </button>
+
+                    <div>
+                        <h1>mariyaGPT</h1>
+
+                        <p id="current-user">
+                            Checking your session...
+                        </p>
+                    </div>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="logout-link"
+                    id="logout-button"
+                >
+                    Log out
+                </button>
+
+            </header>
+
+            <main
+                class="chat-messages"
+                id="chat-messages"
+            >
+                <div class="empty-chat">
+                    <h2>How can I help you today?</h2>
+
+                    <p>
+                        Send a message to begin this conversation.
+                    </p>
+                </div>
+            </main>
+
+            <footer class="chat-composer">
+
+                <form
+                    class="message-form"
+                    id="message-form"
+                >
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Message mariyaGPT..."
+                        rows="1"
+                        required
+                        autofocus
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        id="send-button"
+                    >
+                        Send
+                    </button>
+
+                </form>
+
+            </footer>
+
+        </section>
+
+    </div>
+
+    <script>
+        window.BACKEND_URL = {{ backend_url | tojson }};
+
+        window.INITIAL_CONVERSATION_ID =
+            {{ conversation_id | tojson }};
+    </script>
+
+    <script
+        src="{{ url_for('static', filename='chat.js') }}"
+    ></script>
+
+</body>
+</html>

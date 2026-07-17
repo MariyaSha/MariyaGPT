@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Register - mariyaGPT</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='styles.css') }}"
+    >
+</head>
+
+<body class="login-page">
+
+    <div class="login-card">
+
+        <div class="login-brand">
+
+            <div class="login-logo">
+                M
+            </div>
+
+            <div>
+                <h1>mariyaGPT</h1>
+                <p>Your personal AI assistant</p>
+            </div>
+
+        </div>
+
+        <div class="login-heading">
+
+            <h2>Create an account</h2>
+
+            <p>
+                Create your account to start chatting with mariyaGPT.
+            </p>
+
+        </div>
+
+        <p
+            id="register-error"
+            class="error-message login-error"
+        ></p>
+
+        <form
+            id="register-form"
+            class="login-form"
+        >
+
+            <div class="login-field">
+
+                <label for="username">
+                    Username
+                </label>
+
+                <input
+                    id="username"
+                    name="username"
+                    type="text"
+                    placeholder="Choose a username"
+                    required
+                    autofocus
+                >
+
+            </div>
+
+            <div class="login-field">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+            <div class="login-field">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Create a password"
+                    required
+                >
+
+            </div>
+
+            <div class="login-field">
+
+                <label for="confirm-password">
+                    Confirm Password
+                </label>
+
+                <input
+                    id="confirm-password"
+                    name="confirm_password"
+                    type="password"
+                    placeholder="Confirm your password"
+                    required
+                >
+
+            </div>
+
+            <button
+                type="submit"
+                class="login-button"
+            >
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="login-switch">
+
+            Already have an account?
+
+            <a href="{{ url_for('home') }}">
+                Log in
+            </a>
+
+        </p>
+
+    </div>
+
+    <script>
+        window.BACKEND_URL = {{ backend_url | tojson }};
+    </script>
+
+    <script
+        src="{{ url_for('static', filename='register.js') }}"
+    ></script>
+
+</body>
+</html>
