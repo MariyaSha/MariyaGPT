@@ -45,11 +45,3 @@ def chat(conversation_id=None):
         backend_url=BACKEND_URL,
         conversation_id=conversation_id,
     )
-
-
-if __name__ == "__main__":
-    app.run(
-        host="0.0.0.0",
-        port=5000,
-        debug=True,
-    )
