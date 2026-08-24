@@ -629,7 +629,7 @@ def stream_message(
             stream = client.chat.completions.create(
                 model=(
                     "nvidia/"
-                    "nemotron-nano-9b-v2:free"
+                    "nemotron-3-super-120b-a12b:free"
                 ),
                 messages=openrouter_messages[-20:],
                 stream=True,
