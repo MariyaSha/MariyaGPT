@@ -10,8 +10,8 @@ body {
 
 body {
     font-family: Arial, sans-serif;
-    background: white;
-    color: #202123;
+    background: #18181b;
+    color: #f4f4f5;
 }
 
 .chat-page {
@@ -35,8 +35,8 @@ body {
     flex-direction: column;
 
     padding: 16px;
-    border-right: 1px solid #dddddd;
-    background: #f7f7f8;
+    border-right: 1px solid #2f2f35;
+    background: #202024;
 
     transition:
         width 0.2s ease,
@@ -66,6 +66,7 @@ body {
 .sidebar-close {
     border: none;
     background: transparent;
+    color: #f4f4f5;
     font-size: 26px;
     cursor: pointer;
 }
@@ -75,16 +76,17 @@ body {
     margin: 20px 0;
     padding: 12px;
 
-    border: 1px solid #cccccc;
+    border: 1px solid #3f3f46;
     border-radius: 10px;
 
-    background: white;
+    background: #29292e;
+    color: #f4f4f5;
     font: inherit;
     cursor: pointer;
 }
 
 .new-chat-button:hover {
-    background: #eeeeee;
+    background: #34343a;
 }
 
 .conversation-list {
@@ -99,17 +101,17 @@ body {
 
     border-radius: 8px;
 
-    color: #202123;
+    color: #f4f4f5;
     text-decoration: none;
     white-space: nowrap;
 }
 
 .conversation-link:hover {
-    background: #e8e8e8;
+    background: #2f2f35;
 }
 
 .conversation-link.active {
-    background: #dddddd;
+    background: #3a3a40;
     font-weight: bold;
 }
 
@@ -122,6 +124,8 @@ body {
 
     display: flex;
     flex-direction: column;
+
+    background: #18181b;
 }
 
 /* Header */
@@ -134,7 +138,8 @@ body {
     justify-content: space-between;
 
     padding: 14px 24px;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #2f2f35;
+    background: #1c1c20;
 }
 
 .header-left {
@@ -150,13 +155,14 @@ body {
 
 .chat-header p {
     margin: 4px 0 0;
-    color: #666666;
+    color: #a1a1aa;
     font-size: 14px;
 }
 
 .sidebar-toggle {
     border: none;
     background: transparent;
+    color: #f4f4f5;
     font-size: 24px;
     cursor: pointer;
 }
@@ -166,11 +172,11 @@ body {
 .logout-link {
     padding: 9px 16px;
 
-    border: 1px solid #cccccc;
+    border: 1px solid #3f3f46;
     border-radius: 10px;
 
-    background: white;
-    color: #202123;
+    background: #29292e;
+    color: #f4f4f5;
 
     font: inherit;
     font-size: 14px;
@@ -185,8 +191,8 @@ body {
 }
 
 .logout-link:hover {
-    background: #eeeeee;
-    border-color: #bbbbbb;
+    background: #34343a;
+    border-color: #52525b;
     transform: translateY(-1px);
 }
 
@@ -198,7 +204,7 @@ body {
     outline: none;
 
     box-shadow:
-        0 0 0 3px rgba(32, 33, 35, 0.12);
+        0 0 0 3px rgba(255, 255, 255, 0.08);
 }
 
 /* Messages */
@@ -215,11 +221,11 @@ body {
 .empty-chat {
     margin: 15vh auto 0;
     text-align: center;
-    color: #666666;
+    color: #a1a1aa;
 }
 
 .empty-chat h2 {
-    color: #202123;
+    color: #f4f4f5;
 }
 
 .message-row {
@@ -244,7 +250,7 @@ body {
 }
 
 .assistant-status {
-    color: #888888;
+    color: #8f8f99;
     font-size: 15px;
     font-style: italic;
 }
@@ -259,25 +265,19 @@ body {
 }
 
 .user-message {
-    background: #eeeeee;
+    background: #2f2f35;
     border-radius: 20px;
 }
 
 .assistant-message {
     padding-left: 0;
-}
-
-.assistant-status {
-    min-width: 90px;
-    color: #888888;
-    font-size: 15px;
-    font-style: italic;
+    color: #f4f4f5;
 }
 
 .error-message {
     border-radius: 12px;
-    background: #ffeaea;
-    color: #a40000;
+    background: #3a1f22;
+    color: #ffb4b4;
 }
 
 /* Composer */
@@ -286,8 +286,8 @@ body {
     flex-shrink: 0;
 
     padding: 16px 20px;
-    border-top: 1px solid #eeeeee;
-    background: white;
+    border-top: 1px solid #2f2f35;
+    background: #18181b;
 }
 
 .message-form {
@@ -300,8 +300,10 @@ body {
     margin: 0 auto;
     padding: 10px;
 
-    border: 1px solid #cccccc;
+    border: 1px solid #3f3f46;
     border-radius: 24px;
+
+    background: #202024;
 }
 
 .message-form textarea {
@@ -318,8 +320,15 @@ body {
     resize: none;
     overflow-y: hidden;
 
+    background: transparent;
+    color: #f4f4f5;
+
     font: inherit;
     line-height: 1.5;
+}
+
+.message-form textarea::placeholder {
+    color: #71717a;
 }
 
 .message-form button {
@@ -329,8 +338,8 @@ body {
     border: none;
     border-radius: 21px;
 
-    background: #202123;
-    color: white;
+    background: #f4f4f5;
+    color: #18181b;
     cursor: pointer;
 }
 
@@ -343,7 +352,7 @@ body {
         inset: 0 auto 0 0;
 
         width: min(85vw, 300px);
-        box-shadow: 4px 0 14px rgba(0, 0, 0, 0.15);
+        box-shadow: 4px 0 14px rgba(0, 0, 0, 0.45);
     }
 
     .sidebar.sidebar-hidden {
@@ -375,7 +384,7 @@ body {
 }
 
 .message-form textarea:disabled {
-    background: white;
+    background: transparent;
 }
 
 /* Login page */
@@ -391,13 +400,13 @@ body {
     background:
         radial-gradient(
             circle at top left,
-            rgba(32, 33, 35, 0.08),
+            rgba(255, 255, 255, 0.05),
             transparent 34%
         ),
         linear-gradient(
             135deg,
-            #f7f7f8,
-            #ffffff
+            #18181b,
+            #111114
         );
 }
 
@@ -406,14 +415,14 @@ body {
     max-width: 440px;
     padding: 38px;
 
-    border: 1px solid #e2e2e2;
+    border: 1px solid #2f2f35;
     border-radius: 22px;
 
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(32, 32, 36, 0.96);
 
     box-shadow:
-        0 24px 70px rgba(0, 0, 0, 0.08),
-        0 4px 16px rgba(0, 0, 0, 0.04);
+        0 24px 70px rgba(0, 0, 0, 0.35),
+        0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
 .login-brand {
@@ -434,8 +443,8 @@ body {
 
     border-radius: 14px;
 
-    background: #202123;
-    color: white;
+    background: #f4f4f5;
+    color: #18181b;
 
     font-size: 22px;
     font-weight: bold;
@@ -448,7 +457,7 @@ body {
 
 .login-brand p {
     margin: 0;
-    color: #6b6b6b;
+    color: #a1a1aa;
     font-size: 14px;
 }
 
@@ -465,7 +474,7 @@ body {
 .login-heading p {
     margin: 0;
 
-    color: #6b6b6b;
+    color: #a1a1aa;
 
     line-height: 1.5;
 }
@@ -492,11 +501,11 @@ body {
     height: 48px;
     padding: 0 14px;
 
-    border: 1px solid #cccccc;
+    border: 1px solid #3f3f46;
     border-radius: 11px;
 
-    background: white;
-    color: #202123;
+    background: #18181b;
+    color: #f4f4f5;
 
     font: inherit;
 
@@ -506,15 +515,15 @@ body {
 }
 
 .login-field input::placeholder {
-    color: #999999;
+    color: #71717a;
 }
 
 .login-field input:focus {
     outline: none;
-    border-color: #202123;
+    border-color: #71717a;
 
     box-shadow:
-        0 0 0 3px rgba(32, 33, 35, 0.1);
+        0 0 0 3px rgba(255, 255, 255, 0.06);
 }
 
 .login-button {
@@ -525,8 +534,8 @@ body {
     border: none;
     border-radius: 11px;
 
-    background: #202123;
-    color: white;
+    background: #f4f4f5;
+    color: #18181b;
 
     font: inherit;
     font-weight: 600;
@@ -540,7 +549,7 @@ body {
 }
 
 .login-button:hover {
-    background: #343541;
+    background: #e4e4e7;
     transform: translateY(-1px);
 }
 
@@ -558,15 +567,15 @@ body {
     margin: 26px 0 0;
     padding-top: 24px;
 
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #2f2f35;
 
-    color: #666666;
+    color: #a1a1aa;
     text-align: center;
     font-size: 14px;
 }
 
 .login-switch a {
-    color: #202123;
+    color: #f4f4f5;
     font-weight: 600;
     text-decoration: none;
 }
@@ -580,8 +589,11 @@ body {
     margin: 0 0 20px;
     padding: 12px 14px;
 
-    border: 1px solid #f1b7b7;
+    border: 1px solid #6b2a2a;
     border-radius: 10px;
+
+    background: #321b1b;
+    color: #ffb4b4;
 
     line-height: 1.4;
 }
