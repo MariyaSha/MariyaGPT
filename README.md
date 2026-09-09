@@ -19,8 +19,10 @@ MariyaGPT/
 
 ## Video Tutorial 🎥
 
+Click the video below for a complete step-by-step tutorial on deploying MariyaGPT to production with Sevalla.
+
 <a href="" target="_blank">
-  <img width="600" alt="Deploy LLM Easily Thumbnail" src="https://github.com/user-attachments/assets/4c59f35c-7ac8-4865-a92d-be2ee814da9b" />
+  <img width="600" alt="Deploy LLM Easily Thumbnail" src="https://github.com/user-attachments/assets/d0992b2e-47c0-4de0-aedd-2577cb899e33" />
 </a>
 
 ## Application Preview
