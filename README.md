@@ -153,7 +153,7 @@ http://localhost:5000
 
 MariyaGPT should now be running locally.
 
-## Optional Exercises
+## 5. Optional Exercises
 
 The `exercises` folder contains two small examples used in the video to explain how parts of MariyaGPT work before putting everything together.
 
