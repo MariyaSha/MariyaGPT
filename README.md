@@ -14,7 +14,11 @@ MariyaGPT/
 ## Video Tutorial 🎥
 <a href="" target="_blank"><img width="600" alt="Deploy LLM Easily Thumbnail" src="https://github.com/user-attachments/assets/4c59f35c-7ac8-4865-a92d-be2ee814da9b" /></a>
 
-# RUN LOCALLY
+## Application Preview
+
+<img width="1200" alt="MariyaGPT application interfaces" src="https://github.com/user-attachments/assets/86acbb51-cec4-4c45-9835-839333fbd334" />
+
+# Run locally
 
 ## 1. Clone MariyaGPT
 
@@ -149,7 +153,23 @@ http://localhost:5000
 
 MariyaGPT should now be running locally.
 
-# DEPLOY VIA SEVALLA
+## Optional Exercises
+
+The `exercises` folder contains two small examples used in the video to explain how parts of MariyaGPT work before putting everything together.
+
+### 1. OpenRouter Example
+
+A minimal example showing how to connect Python to an LLM through OpenRouter.
+
+[View the OpenRouter exercise](./exercises/01-openrouter)
+
+### 2. PostgreSQL Multi-User Example
+
+A step-by-step example showing how to store multiple users, conversations, and messages in PostgreSQL.
+
+[View the PostgreSQL exercise](./exercises/02-postgresql-multiuser)
+
+# Deploy via Sevalla
 
 Fork this repository to your own GitHub account before deploying it so your application can use your own code and future updates.
 
