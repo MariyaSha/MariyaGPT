@@ -1,0 +1,4 @@
+openai
+psycopg[binary]
+python-dotenv
+werkzeug
