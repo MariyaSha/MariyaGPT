@@ -186,6 +186,8 @@ conversations, and messages in PostgreSQL.
 Fork this repository to your own GitHub account before deploying it so
 your application can use your own code and future updates.
 
+⭐ [Deploy your MariyaGPT fork with Sevalla](https://sevalla.com/?utm_source=pythonsimplified&utm_medium=Referral&utm_campaign=youtube)
+
 ## 1. Deploy PostgreSQL
 
 In Sevalla:
