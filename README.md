@@ -19,11 +19,13 @@ MariyaGPT/
 
 ## Video Tutorial 🎥
 
-`<a href="" target="_blank">`{=html}`<img width="600" alt="Deploy LLM Easily Thumbnail" src="https://github.com/user-attachments/assets/4c59f35c-7ac8-4865-a92d-be2ee814da9b" />`{=html}`</a>`{=html}
+<a href="" target="_blank">
+  <img width="600" alt="Deploy LLM Easily Thumbnail" src="https://github.com/user-attachments/assets/4c59f35c-7ac8-4865-a92d-be2ee814da9b" />
+</a>
 
 ## Application Preview
 
-`<img width="1200" alt="MariyaGPT application interfaces" src="https://github.com/user-attachments/assets/86acbb51-cec4-4c45-9835-839333fbd334" />`{=html}
+<img width="1200" alt="MariyaGPT application interfaces" src="https://github.com/user-attachments/assets/86acbb51-cec4-4c45-9835-839333fbd334" />
 
 # Run locally
 
